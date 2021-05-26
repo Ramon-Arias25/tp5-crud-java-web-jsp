@@ -241,3 +241,6 @@ table.table .avatar {
 .wrapper-report, .wrapper-report form{
 	margin: 20px
 }
+.form-group-label, .table-responsive-p{
+	color:#000;
+}

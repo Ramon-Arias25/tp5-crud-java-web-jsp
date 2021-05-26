@@ -47,12 +47,21 @@ _En cuanto al codigo_
 hay varios acotaciones:
 
 -la base de dato NO ESTA normalizar pero para el ejemplo considere que una sola tabla con todos los datos funcionaria bien
--la ruta para comenzar la prueba es _/PersonaServlet_  por _get_
+
+-la ruta para comenzar la prueba es _/index.html_  por _get_
+
 -se uso jsp
+
 -las librerias principales a agregar estan en: _/WebContent/WEB-INF/lib_ las agrege en propiedades del proyecto
+
 -para la _src_ prantilla html estan en la ruta _/WebContent/utils_
--las notificaciones _response.getWriter().println()_
--la ruta donde se generan los _.txt_ de reporte es _C:/reportes/_ por lo que se debe crear la carpeta antes de la prueba
+
+-las notificaciones _response.getWriter().println()_ aunque la idea era devolver un booleano al jsp y se mostrar un _div class="alert alert-success" role="alert"_ o  _div class="alert alert-danger" role="alert"_ Segun el estado del booleano
+
+-pero el redireccionamiento con _request.getRequestDispatcher("*.jsp");_ esta usado por ejemplo en el proceso de agregar o acutalizar datos
+
+-la ruta donde se generan los _.txt_ de reporte es _C:/reportes_censo/_ por lo que se debe crear la carpeta antes de la prueba
+
 -esta ruta esta en la ruta del punto anterior esta detallada en la clase _/src/com/censo21/repository/PersonRepository.java_ linea 366
 ```
     File file = new File("C:/reportes/", fileName);

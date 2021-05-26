@@ -2,11 +2,13 @@ package com.censo21.model;
 
 import java.io.Serializable;
 import java.sql.Date;
-
+/**
+ * @author ramon.arias
+ * date: 23/05/2021
+ * current version: 1
+ */
 public class Person implements Serializable{
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	private String documentType;
 	private String documentNumber;
