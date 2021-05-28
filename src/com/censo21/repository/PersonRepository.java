@@ -403,7 +403,7 @@ public class PersonRepository {
 				pstmt = conn.prepareStatement(sql);
 				rs = pstmt.executeQuery();
 				while (rs.next()) {
-					String s = new String( "En total de: "+rs.getString("sex") + "es de:" +	rs.getString("total"));
+					String s = new String( "En total de: "+rs.getString("sex") + " es de:" +	rs.getString("total"));
 					aux.add(s);
 				}
 			} catch (SQLException e) {

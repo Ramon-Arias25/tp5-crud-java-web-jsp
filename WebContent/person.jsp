@@ -91,10 +91,14 @@
 										</div>
 										<div class="form-group">
 											<label class="form-group-label">Sexo</label>
-											<input type="text" class="form-control" name="sex"
-											value="<c:out value='${person.sex}' />"
-											placeholder="M" required />
+											<div>
+												<select class="selectpicker" class="form-control" name="sex" 
+												title="<c:out value='${person.sex}' />" required>
+  												<option>M</option>
+ 												<option>F</option>
+											</select>
 											<p>Una letra F &oacute; M (*)</p>
+											</div>
 										</div>
 										<div class="form-group">
 											<label class="form-group-label">Direccion</label>

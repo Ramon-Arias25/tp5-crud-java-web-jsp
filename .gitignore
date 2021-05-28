@@ -97,6 +97,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.zip
 
 # Censo21
 build/
